@@ -11,7 +11,7 @@
 
 
 .white-cell{
-  background-color: /*rgb(189, 177, 185)*/#ffce9e;
+  background-color:#ffce9e;
   width: 100%;
   height: 100%;
   border: solid  1px;
@@ -19,25 +19,22 @@
 .black-cell{
   width: 100%;
   height: 100%;
-  background-color: /*#966F33*/#d18b47;
+  background-color: #d18b47;
 }
 .selected{
   width: 100%;
   height: 100%;
   background-color: rgb(109, 131, 109);
-  opacity: 80%;
 }
 .possible-move{
   width: 100%;
   height: 100%;
   background-color:green;
-  opacity: 80%;
 }
 .check{
   width: 100%;
   height: 100%;
   background-color:red;
-  opacity: 80%;
 }
 .BK{
   background-image: url("./pieces/BK.svg");
