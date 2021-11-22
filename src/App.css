@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+.board{
+  height: 500px;
+  width: 500px;
+  display: grid;
+  grid-template-columns: repeat(8,1fr);
+  grid-template-rows: repeat(8,1fr);
+  border: solid black 1px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.white-cell{
+  background-color: /*rgb(189, 177, 185)*/#ffce9e;
+  width: 100%;
+  height: 100%;
+  border: solid  1px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.black-cell{
+  width: 100%;
+  height: 100%;
+  background-color: /*#966F33*/#d18b47;
 }
-
-.App-link {
-  color: #61dafb;
+.selected{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(109, 131, 109);
+  opacity: 80%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.possible-move{
+  width: 100%;
+  height: 100%;
+  background-color:green;
+  opacity: 80%;
+}
+.check{
+  width: 100%;
+  height: 100%;
+  background-color:red;
+  opacity: 80%;
+}
+.BK{
+  background-image: url("./pieces/BK.svg");
+  background-size: cover;
+}
+.BQ{
+  background-image: url("./pieces/BQ.svg");
+  background-size: cover;
+}
+.BR{
+  background-image: url("./pieces/BR.svg");
+  background-size: cover;
+}
+.BB{
+  background-image: url("./pieces/BB.svg");
+  background-size: cover;
+}
+.BN{
+  background-image: url("./pieces/BN.svg");
+  background-size: cover;
+}
+.BP{
+  background-image: url("./pieces/BP.svg");
+  background-size: cover;
+}
+.WK{
+  background-image: url("./pieces/WK.svg");
+  background-size: cover;
+}
+.WQ{
+  background-image: url("./pieces/WQ.svg");
+  background-size: cover;
+}
+.WR{
+  background-image: url("./pieces/WR.svg");
+  background-size: cover;
+}
+.WB{
+  background-image: url("./pieces/WB.svg");
+  background-size: cover;
+}
+.WN{
+  background-image: url("./pieces/WN.svg");
+  background-size: cover;
+}
+.WP{
+  background-image: url("./pieces/WP.svg");
+  background-size: cover;
 }
