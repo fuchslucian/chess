@@ -646,7 +646,8 @@ const Chess = () => {
     <>
     {checkmate && <h1>{checkmate}</h1>}
     <div className="board">
-    {board.map((row, i) => row.map((figure, y) => <div key={`${i}/${y}`} onClick={()=>{handleClick(i,y)}}><Cell selected={selected} figure={figure} row={i} col={y}/></div>))}
+    {currPlayer === "B" && board.slice().reverse().map((row, i) => row.map((figure, y) => <div key={`${i}/${y}`} onClick={()=>{handleClick(7-i,y)}}><Cell selected={selected} figure={figure} row={7-i} col={y}/></div>))}
+    {currPlayer === "W" && board.map((row, i) => row.map((figure, y) => <div key={`${i}/${y}`} onClick={()=>{handleClick(i,y)}}><Cell selected={selected} figure={figure} row={i} col={y}/></div>))}
     </div>
     <button onClick={()=>{handleNewGame()}}>new game</button>
     </>
